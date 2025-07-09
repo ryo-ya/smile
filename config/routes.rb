@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root "home#top"
   get "/" => "home#top"
-  get "contact" => "home#contact"
+  get "contact" => "contact#new"
+  post "contact" => "contact#new"
+  post 'contact/confirm' => "contact#confirm"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
