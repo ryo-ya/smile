@@ -111,6 +111,7 @@ header.pc .logo {
 	border-bottom: 1px solid #fff;	/*下線の幅、線種、色（古いブラウザ用）*/
 	border-bottom: 1px solid rgba(255,255,255,0.3);	/*下線の幅、線種、色。255,255,255は白の事で0.3は色が30%出た状態の事。*/
 	height: 100px;	/*高さ*/
+	padding: 2%;
 }
 header.pc .logo img {
 	width: 100px;	/*画像の幅。マウスオン時に同じ大きさを保つ為。*/
@@ -520,6 +521,18 @@ ol {
 .sh {display: none;}
 #pagetop {display: block;margin-top: -2%;padding-top: 2%;}
 
+.profile-wrapper {
+	display: flex;
+	justify-content: space-between;
+  	// align-items: center;
+}
+
+.prof-image {
+	width: 30%;
+	height: auto;
+	// border-radius: 50%;
+
+}
 
 
 /*画面幅800px以下の設定

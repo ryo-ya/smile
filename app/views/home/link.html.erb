@@ -24,7 +24,7 @@
 	</head>
 
 
-	<body class="contact">
+	<body class="link">
 
 		<div id="container">
 
@@ -34,56 +34,44 @@
 
 					<section id="pagetop">
 
-						<h2 class="title">CONTACT<span>確認画面</span></h2>
+						<h2 class="title">Links<span>リンク</span></h2>
 
-						<!-- フォームの情報はここからです -->
-						<%= form_tag("/contact/create", method: :post, data: { turbo: false }) do %>
-							<%= hidden_field_tag :name, @contact.name %>
-							<%= hidden_field_tag :email, @contact.email %>
-							<%= hidden_field_tag :content, @contact.content %>
-							<table class="ta1">
-								<!--<tr><td colspan="2" class="auto"><strong>確認画面</strong></td></tr>-->
-								<!-- 入力／確認 -->
-								<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
-								<tr>
-									<th width="150">お名前</th>
-									<td>
-										<%= @contact.name %>
-									</td>
-								</tr>
-								<tr>
-									<th width="150">メールアドレス</th>
-									<td>
-										<%= @contact.email %>
-									</td>
-								</tr>
-								<tr>
-									<th>お問い合わせ内容</th>
-									<td>
-										<%= @contact.content %>
-									</td>
-								</tr>
-							</table>
-							<div class="c">
-								<!-- <input type="submit" value="送信する" class="btn"> -->
-								<%= submit_tag "送信する", class: "btn" %>
-								
-							</div>
-							&nbsp;
-						<% end %>
-						<%= form_tag("/contact", method: :post, data: { turbo: false }) do %>
-							<%= hidden_field_tag :name, @contact.name %>
-							<%= hidden_field_tag :email, @contact.email %>
-							<%= hidden_field_tag :content, @contact.content %>
-							<div class="c">
-								<%# <input type="button" value="戻る"
-									onClick="document.form1.mode.value='reinput';document.form1.submit()"
-									class="btn"> %>
-								<%= submit_tag "戻る", class: "btn" %>
-							</div>
-						<% end %>
-						<!-- フォームの情報はここまでです -->
-						
+						<table class="ta1">
+							<caption>見出しが必要であればここを使います</caption>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+							<tr>
+								<th><a href="#">サイト名</a></th>
+								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+							</tr>
+						</table>
+
 					</section>
 
 					<footer>
@@ -102,6 +90,7 @@
 
 		<!--ページの上部に戻る「↑」ボタン-->
 		<p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
+
 		<!--メニュー開閉ボタン-->
 		<div id="menubar_hdr" class="close"></div>
 
