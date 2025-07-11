@@ -47,8 +47,8 @@ a:hover {
 	width: 100%;
 	height: 100%;
 }
-/*company.htmlの背景画像指定*/
-.company #container {
+/*profile.htmlの背景画像指定*/
+.prifile #container {
 	background: unquote("url(" + asset-path("1.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
 	background: unquote("url(" + asset-path("1.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
 }
@@ -521,6 +521,8 @@ ol {
 .sh {display: none;}
 #pagetop {display: block;margin-top: -2%;padding-top: 2%;}
 
+/*プロフィール
+---------------------------------------------------------------------------*/
 .profile-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -529,11 +531,42 @@ ol {
 
 .prof-image {
 	width: 30%;
-	height: auto;
-	// border-radius: 50%;
-
+	height: 30%;
+	margin-right: 50px;
 }
 
+/*タイトルロゴ
+---------------------------------------------------------------------------*/
+.title-logo {
+	height: 60px;
+	width: 60px;
+}
+
+.top-title-logo {
+	margin-left: 30px;
+	margin-top: 30px;
+	height: 100px;
+	width: 100px;
+	display: none;
+}
+
+/*問い合わせエラーメッセージ
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.error-message {
+	text-align: center;
+	color: #ff0000;
+	font-weight: bold;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+
+/*画面幅801px以上の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:801px){
+.title-logo {
+	display: none;
+}
+}
 
 /*画面幅800px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -708,6 +741,14 @@ footer .pr {display: block;}
 	width: 50%;			/*幅*/
 }
 
+}
+
+/*HOME画面のタイトルロゴを表示するのは以下の条件のみ
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-height:500px) and (max-width:800px) {
+.top-title-logo {
+	display: block;
+}	
 }
 
 

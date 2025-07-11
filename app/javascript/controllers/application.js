@@ -1,4 +1,5 @@
 import { Application } from "@hotwired/stimulus"
+import "openclose"
 
 const application = Application.start()
 

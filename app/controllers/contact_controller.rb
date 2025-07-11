@@ -15,6 +15,11 @@ class ContactController < ApplicationController
       email: params[:email],
       content: params[:content]
     )
+
+    if @contact.name.blank? || @contact.email == blank? || @contact.content == blank?
+      flash[:error] = "※未入力の項目があります。"
+      redirect_to "/contact" and return
+    end
   end
 
   def create

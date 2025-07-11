@@ -33,7 +33,7 @@
 				<div id="main">
 
 					<section id="pagetop">
-
+						<h1 class="title-logo"><%= link_to image_tag("ryoya_magician_logo_circle_white.png", alt: "SAMPLE SITE"), root_path %></h1>
 						<h2 class="title">Works<span>業務内容</span></h2>
 						<p>画像サイズは適当でかまいませんが必ず正方形にして下さい。1pxでもずれがあると段落ちする場合があります。<br>
 							リンクが設定されている場合、画像の右上に「→」マークが出ます。色やサイズなどの指定はcssフォルダのstyle.cssの「.list
@@ -132,16 +132,6 @@
 
 		<!--ページの上部に戻る「↑」ボタン-->
 		<p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
-
-		<!--メニュー開閉ボタン-->
-		<div id="menubar_hdr" class="close"></div>
-
-		<!--メニューの開閉処理条件設定 800px以下-->
-		<script>
-			if (OCwindowWidth() <= 800) {
-				open_close("menubar_hdr", "menubar-s");
-			}
-		</script>
 
 	</body>
 </html>
