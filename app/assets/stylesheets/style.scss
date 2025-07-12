@@ -523,17 +523,7 @@ ol {
 
 /*プロフィール
 ---------------------------------------------------------------------------*/
-.profile-wrapper {
-	display: flex;
-	justify-content: space-between;
-  	// align-items: center;
-}
 
-.prof-image {
-	width: 30%;
-	height: 30%;
-	margin-right: 50px;
-}
 
 /*タイトルロゴ
 ---------------------------------------------------------------------------*/
@@ -566,6 +556,13 @@ ol {
 .title-logo {
 	display: none;
 }
+
+.prof-image {
+	margin-left: 30px;
+	width: 30%;
+	height: 30%;
+}
+
 }
 
 /*画面幅800px以下の設定
@@ -826,5 +823,20 @@ ol {
 /*その他
 ---------------------------------------------------------------------------*/
 .ws,.wl {width: 94%;}
+
+.profile-wrapper {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.prof-image {
+	width: 80%;
+	height: auto;
+}
+
+.profile-text, .prof-text {
+	width: 100%;
+}
 
 }

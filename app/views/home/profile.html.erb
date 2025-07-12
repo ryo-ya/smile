@@ -37,10 +37,16 @@
 						<h2 class="title">Profile<span>プロフィール</span></h2>
 						<div class="profile-wrapper">
 							<div class="profile-text">
-								<h3>プロフィール文<br>※このsectionブロックの、class=&quot;box&quot;を外しました。</h3>
+								<h2 class="my-name">
+									Ryoya Suzuki
+									<!-- <div class="prof-image"> -->
+										<!-- <%= image_tag("sample1.jpg", alt: "") %> -->
+									<!-- </div> -->
+								</h2>
+								<h3 >東京都出身の<%= get_age(Date.new(1995, 1, 25)) %>歳です。<br>普段はJavaやVB.NETを用いた大手銀行向けWebシステム開発を行っております。</h3>
+								<h3 >日本大学文理学部卒業し、理科の教員免許を持っております。<br>SEとして働く傍ら、プロマジシャンとしても数々のお店に出演しております。</h3>
 								<p>boxを指定すると背景にボックスがつきます。背景画像と上のコンテンツとのコントラスト弱くてみづらい場合などに使って下さい。</p>
 							</div>
-							<%= image_tag("sample1.jpg", alt: "", class: "prof-image") %>
 						</div>
 					</section>
 
