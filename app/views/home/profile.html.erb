@@ -36,16 +36,27 @@
 						<h1 class="title-logo"><%= link_to image_tag("ryoya_magician_logo_circle_white.png", alt: "SAMPLE SITE"), root_path %></h1>
 						<h2 class="title">Profile<span>プロフィール</span></h2>
 						<div class="profile-wrapper">
-							<div class="profile-text">
-								<h2 class="my-name">
-									Ryoya Suzuki
-									<!-- <div class="prof-image"> -->
-										<!-- <%= image_tag("sample1.jpg", alt: "") %> -->
-									<!-- </div> -->
-								</h2>
-								<h3 >東京都出身の<%= get_age(Date.new(1995, 1, 25)) %>歳です。<br>普段はJavaやVB.NETを用いた大手銀行向けWebシステム開発を行っております。</h3>
-								<h3 >日本大学文理学部卒業し、理科の教員免許を持っております。<br>SEとして働く傍ら、プロマジシャンとしても数々のお店に出演しております。</h3>
-								<p>boxを指定すると背景にボックスがつきます。背景画像と上のコンテンツとのコントラスト弱くてみづらい場合などに使って下さい。</p>
+							<h2 class="my-name">
+								Ryoya Suzuki
+							</h2>
+							<div class="profile-contents">
+								<div class="prof-image sh">
+									<%= image_tag("sample1.jpg", alt: "") %>
+								</div>
+								<div class="profile-text">
+									<h3>
+										東京都出身の<%= get_age(Date.new(1995, 1, 25)) %>歳です。
+										現在は東京都在住です。<br>
+										普段はJavaやVB.NETを用いた大手銀行向けWebシステム開発を行っております。<br>
+										日本大学文理学部卒業し、理科の教員免許を持っております。<br>SEとして働く傍ら、プロマジシャンとしても数々のお店に出演しております。<br>
+										<br>
+										&lt;趣味&gt;<br>
+										サックス🎷、ダーツ、ポケモン
+									</h3>
+								</div>
+								<div class="prof-image pc">
+									<%= image_tag("sample1.jpg", alt: "") %>
+								</div>
 							</div>
 						</div>
 					</section>
@@ -229,7 +240,7 @@
 					</section>
 
 					<footer>
-						<small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small>
+						<small>Copyright&copy; <a href="/">Ryo-ya Smile</a> All Rights Reserved.</small>
 						<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 					</footer>
 

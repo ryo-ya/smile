@@ -292,7 +292,7 @@ header .icon img {
 .list {
 	position: relative;
 	float: left;	/*左に回り込み*/
-	width: 30%;		/*幅*/
+	// width: 30%;		/*幅*/
 	margin-left: 2.5%;	/*左に空けるスペース*/
 	margin-bottom: 20px;	/*下に空けるスペース*/
 	background: #000;	/*背景色*/
@@ -402,8 +402,18 @@ footer a {text-decoration: none;}
 }
 /*ta1の左側ボックス*/
 .ta1 th {
-	width: 140px;		/*幅*/
+	width: 170px;		/*幅*/
 	text-align: center;	/*センタリング*/
+}
+/*リンク*/
+.link-column {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+/*リンクアイコン*/
+.link-icon {
+	width: 25px;
 }
 
 /*フォーム関連
@@ -523,6 +533,19 @@ ol {
 
 /*プロフィール
 ---------------------------------------------------------------------------*/
+.profile-contents {
+	gap: 20px;
+}
+
+.prof-image.pc {
+	margin-left: auto;
+	width: 400px;
+}
+
+.prof-image.sh {
+	// margin: auto;
+	width: 80%;
+}
 
 
 /*タイトルロゴ
@@ -556,13 +579,13 @@ ol {
 .title-logo {
 	display: none;
 }
-
-.prof-image {
-	margin-left: 30px;
-	width: 30%;
-	height: 30%;
+.profile-contents {
+	display: flex;
 }
 
+.list {
+	width: 30%;		/*幅*/
+}
 }
 
 /*画面幅800px以下の設定
@@ -830,12 +853,7 @@ ol {
 	text-align: center;
 }
 
-.prof-image {
-	width: 80%;
-	height: auto;
-}
-
-.profile-text, .prof-text {
+.profile-contents, .prof-text {
 	width: 100%;
 }
 

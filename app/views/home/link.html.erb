@@ -9,6 +9,7 @@
 		<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
 		<link rel="stylesheet" href="app/assets/stylesheets/style.scss">
 		<link rel="stylesheet" href="app/assets/javascript/print.scss" media="print">
+		<link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -36,37 +37,93 @@
 						<h2 class="title">Links<span>リンク</span></h2>
 
 						<table class="ta1">
-							<caption>見出しが必要であればここを使います</caption>
+							<caption>ホームページ、SNS、ブログ等のリンクは以下参照</caption>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<%= link_to image_tag("ryoya_magician_logo_circle_white.png", alt: "HomePage", class: "link-icon"), "https://www.ryo-ya.info/", target: "_blank" %>
+										<div>
+											<a href="https://www.ryo-ya.info/" target="_blank">マジシャン☆Ryo-ya★<br>ホームページ</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<%= link_to image_tag("icon_x.png", alt: "X", class: "link-icon"), "https://x.com/sax_rc_md", target: "_blank" %>
+										<div>
+											<a href="https://x.com/sax_rc_md" target="_blank">X(旧:Twitter)</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<%= link_to image_tag("icon_instagram.png", alt: "Instagram", class: "link-icon"), "https://www.instagram.com/ryoya_magician0125/", target: "_blank" %>
+										<div>
+											<a href="https://www.instagram.com/ryoya_magician0125/" target="_blank">Instagram</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<a href="https://www.tiktok.com/@ryoyasuzuki0125" target="_blank"><i class="fa-brands fa-tiktok link-icon" alt="TilTok" style="color: #ffffff;"></i></a>
+										<div>
+											<a href="https://www.tiktok.com/@ryoyasuzuki0125" target="_blank">TikTok</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<%= link_to image_tag("icon_facebook.png", alt: "Facebook", class: "link-icon"), "https://www.facebook.com/ryoya.suzuki.313", target: "_blank" %>
+										<div>
+											<a href="https://www.facebook.com/ryoya.suzuki.313" target="_blank">Facebook</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<%= link_to image_tag("icon_note.png", alt: "note", class: "link-icon"), "https://note.com/ryoya_suzuki", target: "_blank" %>
+										<div>
+											<a href="https://note.com/ryoya_suzuki" target="_blank">note</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<a href="https://github.com/ryo-ya" target="_blank"><i class="fa-brands fa-github link-icon" alt="GitHub" style="color: #ffffff;"></i></a>
+										<div>
+											<a href="https://github.com/ryo-ya" target="_blank">Github</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 							<tr>
-								<th><a href="#">サイト名</a></th>
+								<th>
+									<div class="link-column">
+										<%= link_to image_tag("icon_ameba.png", alt: "Ameba", class: "link-icon"), "https://ameblo.jp/ryoya-suzuki/", target: "_blank" %>
+										<div>
+											<a href="https://ameblo.jp/ryoya-suzuki/" target="_blank">アメブロ</a>
+										</div>
+									</div>
+								</th>
 								<td>ここに説明など入れて下さい。サンプルテキスト。</td>
 							</tr>
 						</table>
@@ -74,7 +131,7 @@
 					</section>
 
 					<footer>
-						<small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small>
+						<small>Copyright&copy; <a href="/">Ryo-ya Smile</a> All Rights Reserved.</small>
 						<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 					</footer>
 

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get "/" => "home#top"
   post "/" => "home#top"
   get "profile" => "home#profile"
-  get "works" => "home#works"
+  get "activitys" => "home#activitys"
   get "works2" => "home#works2"
   get "link" => "home#link"
   get "contact" => "contact#new"

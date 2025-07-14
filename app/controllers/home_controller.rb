@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   def profile
 
   end
-  def works
+  def activitys
 
   end
   def works2
