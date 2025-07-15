@@ -8,6 +8,24 @@ class HomeController < ApplicationController
   def activitys
 
   end
+  def engineer
+
+  end
+  def magician
+
+  end
+  def saxophone
+
+  end
+  def darts
+
+  end
+  def pokemon
+
+  end
+  def akiba
+    
+  end
   def works2
 
   end

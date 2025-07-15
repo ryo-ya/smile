@@ -521,7 +521,7 @@ ol {
 .color1, .color1 a {color: #448db3 !important;}
 .pr {font-size: 10px;}
 .wl {width: 96%;}
-.ws {width: 50%;}
+.ws {width: 96%;}
 .c {text-align: center;}
 .r {text-align: right;}
 .l {text-align: left;}
@@ -547,6 +547,23 @@ ol {
 	width: 80%;
 }
 
+.history-contents {
+	padding-left: 10px;
+	padding-bottom: 30px;
+}
+
+.history-contents th {
+	width: 100px;
+	vertical-align: top;
+}
+
+.history-contents td {
+	padding-bottom: 10px;
+}
+
+.line-break {
+	display: none;
+}
 
 /*タイトルロゴ
 ---------------------------------------------------------------------------*/
@@ -585,6 +602,10 @@ ol {
 
 .list {
 	width: 30%;		/*幅*/
+}
+
+.line-break {
+	display: block;
 }
 }
 
