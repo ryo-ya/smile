@@ -550,12 +550,12 @@ ol {
 
 .prof-image.pc {
 	margin-left: auto;
-	width: 400px;
+	width: 300px;
 }
 
 .prof-image.sh {
 	// margin: auto;
-	width: 80%;
+	width: 70%;
 }
 
 .history-contents {
@@ -590,14 +590,6 @@ ol {
 	width: 100px;
 	display: none;
 }
-/*マジシャン出演場所
----------------------------------------------------------------------------*/
-.performance-place {
-	float: left;
-	padding-right: 15px;
-	width: 25%;
-	box-sizing: border-box;
-}
 
 /*問い合わせエラーメッセージ
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -625,6 +617,14 @@ ol {
 
 .line-break {
 	display: block;
+}
+/*マジシャン出演場所
+---------------------------------------------------------------------------*/
+.performance-place {
+	float: left;
+	padding-right: 15px;
+	width: 40%;
+	box-sizing: border-box;
 }
 }
 
@@ -786,6 +786,12 @@ footer .pr {display: block;}
 .sh {display:block;}
 .pc {display:none;}
 
+/*マジシャン出演場所
+---------------------------------------------------------------------------*/
+.performance-place {
+	padding-right: 15px;
+	box-sizing: border-box;
+}
 }
 
 
@@ -902,5 +908,4 @@ ol {
 .profile-contents, .prof-text {
 	width: 100%;
 }
-
 }
