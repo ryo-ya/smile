@@ -34,85 +34,90 @@
 						<h1 class="title-logo"><%= link_to image_tag("logo_ryoya_smile_circle.png", alt: "Ryo-ya Smile"), root_path %></h1>
 						<h2 class="title">Activitys<span>活動内容</span></h2>
 
-						<h2>システムエンジニア</h2>
+						<section>
+							<h2>システムエンジニア</h2>
 
-						<figure class="c mb30">
-							<%= image_tag("system_engineer_2.jpg", alt: "システムエンジニア", class: "figure-image") %>
-						</figure>
+							<figure class="c mb30">
+								<%= image_tag("system_engineer_2.jpg", alt: "システムエンジニア", class: "figure-image") %>
+							</figure>
+							<h3>
+								正社員システムエンジニアとして勤務しております。
+								エンジニア歴は現在<%= get_age(Date.new(2018, 4, 1)) + 1 %>年目です。<br>
+								Java、VB.NETを中心に、主に金融系Webシステムの開発に携わっております。<br>
+								<%= image_tag("system_engineer_3.jpg", alt: "システムエンジニア", class: "activitys-contents-image") %>
+							</h3>
+						</section>
 
-						<h3>
-							正社員システムエンジニアとして勤務しております。
-							エンジニア歴は現在<%= get_age(Date.new(2018, 4, 1)) + 1 %>年目です。<br>
-							Java、VB.NETを中心に、主に金融系Webシステムの開発に携わっております。<br>
-							<%= image_tag("system_engineer_3.jpg", alt: "システムエンジニア", class: "system-engineer-image") %>
-						</h3>
-
-						<h2>保有スキル</h2>
-						<h3>
-							<strong>言語：</strong><br>
-							<p>Java、VB.NET、Ruby、HTML、CSS、JavaScript、Excel VBA</p>
-							<strong>ＯＳ：</strong><br>
-							<p>Windows、Linux</p>
-							<strong>ＤＢ：</strong><br>
-							<p>Oracle、PostgreSQL、MySQL、SQL Server</p>
-							<strong>フレームワーク：</strong><br>
-							<p>Spring、Spring Boot、ASP.NET、Ruby on Rails</p>
-							<strong>ツール：</strong><br>
-							<p>Excel、JUnit、Git、SVN</p>
-							<strong>サーバーサービス：</strong><br>
-							<p>Tomcat、Apache</p>
-						</h3>
+						<section>
+							<h2>保有スキル</h2>
+							<h3>
+								<strong>言語：</strong><br>
+								<p>Java、VB.NET、Ruby、HTML、CSS、JavaScript、Excel VBA</p>
+								<strong>ＯＳ：</strong><br>
+								<p>Windows、Linux</p>
+								<strong>ＤＢ：</strong><br>
+								<p>Oracle、PostgreSQL、MySQL、SQL Server</p>
+								<strong>フレームワーク：</strong><br>
+								<p>Spring、Spring Boot、ASP.NET、Ruby on Rails</p>
+								<strong>ツール：</strong><br>
+								<p>Excel、JUnit、Git、SVN</p>
+								<strong>サーバーサービス：</strong><br>
+								<p>Tomcat、Apache</p>
+							</h3>
+						</section>
 						
-						<h2>主な実務経歴</h2>
-						<table class="ta1">
-							<caption>金融系</caption>
-							<tr>
-								<th class="industry">某証券会社向け</th>
-								<th class="program-language">Java</th>
-								<td class="job-contents">クレジットカードチャージバックシステム開発</td>
-							</tr>
-							<tr>
-								<th class="industry">某保険会社向け</th>
-								<th class="program-language">VB.NET</th>
-								<td class="job-contents">某年金機構システムログイン機能新規開発</td>
-							</tr>
-							<tr>
-								<th class="industry">某銀行向け</th>
-								<th class="program-language">Java</th>
-								<td class="job-contents">金、プラチナ取引システム開発</td>
-							</tr>
-							<tr>
-								<th class="industry">某銀行向け</th>
-								<th class="program-language">VB.NET</th>
-								<td class="job-contents">決算システム開発、グレードアップ対応、システム移行対応</td>
-							</tr>
-						</table>
-						<table class="ta1">
-							<caption>保険系</caption>
-							<tr>
-								<th class="industry">某保険会社向け</th>
-								<th class="program-language">VB.NET</th>
-								<td class="job-contents">自賠責及び個人賠償額算出システム開発</td>
-							</tr>
-							<tr>
-								<th class="industry">某保険会社向け</th>
-								<th class="program-language">Java</th>
-								<td class="job-contents">損害保険料支払いシステム開発</td>
-							</tr>
-						</table>
-						<table class="ta1">
-							<caption>メーカー系</caption>
-							<tr>
-								<th class="industry">某メーカー向け</th>
-								<th class="program-language">Java</th>
-								<td class="job-contents">複合機プラグイン開発</td>
-							</tr>
-							<tr>
-								<th class="industry">某メーカー向け</th>
-								<th class="program-language">Java</th>
-								<td class="job-contents">売上管理システム新規開発対応</td>
-							</tr>
-						</table>
+						<section>
+							<h2>主な実務経歴</h2>
+							<table class="ta1">
+								<caption>金融系</caption>
+								<tr>
+									<th class="industry">某証券会社向け</th>
+									<th class="program-language">Java</th>
+									<td class="job-contents">クレジットカードチャージバックシステム開発</td>
+								</tr>
+								<tr>
+									<th class="industry">某保険会社向け</th>
+									<th class="program-language">VB.NET</th>
+									<td class="job-contents">某年金機構システムログイン機能新規開発</td>
+								</tr>
+								<tr>
+									<th class="industry">某銀行向け</th>
+									<th class="program-language">Java</th>
+									<td class="job-contents">金、プラチナ取引システム開発</td>
+								</tr>
+								<tr>
+									<th class="industry">某銀行向け</th>
+									<th class="program-language">VB.NET</th>
+									<td class="job-contents">決算システム開発、グレードアップ対応、システム移行対応</td>
+								</tr>
+							</table>
+							<table class="ta1">
+								<caption>保険系</caption>
+								<tr>
+									<th class="industry">某保険会社向け</th>
+									<th class="program-language">VB.NET</th>
+									<td class="job-contents">自賠責及び個人賠償額算出システム開発</td>
+								</tr>
+								<tr>
+									<th class="industry">某保険会社向け</th>
+									<th class="program-language">Java</th>
+									<td class="job-contents">損害保険料支払いシステム開発</td>
+								</tr>
+							</table>
+							<table class="ta1">
+								<caption>メーカー系</caption>
+								<tr>
+									<th class="industry">某メーカー向け</th>
+									<th class="program-language">Java</th>
+									<td class="job-contents">複合機プラグイン開発</td>
+								</tr>
+								<tr>
+									<th class="industry">某メーカー向け</th>
+									<th class="program-language">Java</th>
+									<td class="job-contents">売上管理システム新規開発対応</td>
+								</tr>
+							</table>
+						</section>
 					</article>
 
 					<p><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>

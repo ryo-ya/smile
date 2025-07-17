@@ -592,13 +592,32 @@ ol {
 }
 
 /*問い合わせエラーメッセージ
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------*/
 .error-message {
 	text-align: center;
 	color: #ff0000;
 	font-weight: bold;
 	background-color: #ffffff;
 	margin-bottom: 10px;
+}
+/*Activitys内の画像
+---------------------------------------------------------------------------*/
+.activitys-contents-image {
+	width: 80%;
+	padding-bottom: 50px;
+}
+.table-hopping {
+	padding-right: 20px;
+	padding-bottom: 50px;
+}
+/*マジシャン☆Ryo-ya★HPのURL*/
+.magician-hp-url {
+	opacity: 1;	/*リンクを指定した際は60%だけ色を出す。*/
+	width: 80%;
+}
+/*マウスオン時のマジシャン☆Ryo-ya★HPのURLサムネイル*/
+.magician-hp-url:hover {
+	opacity: 0.6;		/*リンクを指定した際のマウスオン時に色を100%出す。*/
 }
 
 /*画面幅801px以上の設定
@@ -625,6 +644,16 @@ ol {
 	padding-right: 15px;
 	width: 40%;
 	box-sizing: border-box;
+}
+.table-hopping-image {
+	display: flex;
+}
+.activitys-contents-image {
+	width: 30%;
+}
+/*マジシャン☆Ryo-ya★HPのURL*/
+.magician-hp-url {
+	width: 30%;
 }
 }
 
@@ -818,11 +847,11 @@ footer .pr {display: block;}
 }
 
 /*画面幅481px以上の設定*/
-@media screen and (min-width:481px) {
-.system-engineer-image {
-	width: 30%;
-}
-}
+// @media screen and (min-width:481px) {
+// .activitys-contents-image {
+// 	width: 30%;
+// }
+// }
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
