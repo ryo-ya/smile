@@ -1,71 +1,53 @@
 @charset "utf-8";
 
-
 /*CSSスライドショー設定
 ---------------------------------------------------------------------------*/
-// @keyframes slide1 {
-// 	0% {opacity: 0;transform: scale(1);}
-// 	10% {opacity: 0;}
-// 	20% {opacity: 1;}
-// 	50% {opacity: 1;}
-// 	60% {opacity: 0;}
-// 	100% {opacity: 0;transform: scale(1.2);}
-// }
-// @keyframes slide2 {
-// 	0% {opacity: 0;transform: scale(1);}
-// 	35% {opacity: 0;}
-// 	45% {opacity: 1;}
-// 	72% {opacity: 1;}
-// 	82% {opacity: 0;}
-// 	100% {opacity: 0;transform: scale(1.2);}
-// }
-// @keyframes slide3 {
-// 	0% {opacity: 0;transform: scale(1);}
-// 	58% {opacity: 0;}
-// 	68% {opacity: 1;}
-// 	83% {opacity: 1;}
-// 	93% {opacity: 0;}
-// 	100% {opacity: 0;transform: scale(1.2);}
-// }
-/*---------------------------------------------------------------------------*/
-// @keyframes slide4 {
-// 	0% {opacity: 0;transform: scale(1);}
-// 	58% {opacity: 0;}
-// 	68% {opacity: 1;}
-// 	83% {opacity: 1;}
-// 	93% {opacity: 0;}
-// 	100% {opacity: 0;transform: scale(1.2);}
-// }
-// @keyframes slide5 {
-// 	0% {opacity: 0;transform: scale(1);}
-// 	58% {opacity: 0;}
-// 	68% {opacity: 1;}
-// 	83% {opacity: 1;}
-// 	93% {opacity: 0;}
-// 	100% {opacity: 0;transform: scale(1.2);}
-// }
-// @keyframes slide6 {
-// 	0% {opacity: 0;transform: scale(1);}
-// 	58% {opacity: 0;}
-// 	68% {opacity: 1;}
-// 	83% {opacity: 1;}
-// 	93% {opacity: 0;}
-// 	100% {opacity: 0;transform: scale(1.2);}
-// }
 @keyframes slide1 {
 	0% {opacity: 0;transform: scale(1);}
-	10% {opacity: 1;}
-	30% {opacity: 1;}
-	50% {opacity: 0;}
-	90% {opacity: 0;}
+	2% {opacity: 0;}
+	7% {opacity: 1;}
+	25% {opacity: 1;}
+	40% {opacity: 0;}
 	100% {opacity: 0;transform: scale(1.2);}
 }
 @keyframes slide2 {
 	0% {opacity: 0;transform: scale(1);}
-	10% {opacity: 0;}
-	50% {opacity: 1;}
-	60% {opacity: 1;}
-	72% {opacity: 0;}
+	17% {opacity: 0;}
+	28% {opacity: 1;}
+	40% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 0;transform: scale(1.2);}
+}
+@keyframes slide3 {
+	0% {opacity: 0;transform: scale(1);}
+	37% {opacity: 0;}
+	42% {opacity: 1;}
+	61% {opacity: 1;}
+	67% {opacity: 0;}
+	100% {opacity: 0;transform: scale(1.2);}
+}
+@keyframes slide4 {
+	0% {opacity: 0;transform: scale(1);}
+	48% {opacity: 0;}
+	62% {opacity: 1;}
+	75% {opacity: 1;}
+	82% {opacity: 0;}
+	100% {opacity: 0;transform: scale(1.2);}
+}
+@keyframes slide5 {
+	0% {opacity: 0;transform: scale(1);}
+	68% {opacity: 0;}
+	76% {opacity: 1;}
+	85% {opacity: 1;}
+	89% {opacity: 0;}
+	100% {opacity: 0;transform: scale(1.2);}
+}
+@keyframes slide6 {
+	0% {opacity: 0;transform: scale(1);}
+	78% {opacity: 0;}
+	84% {opacity: 1;}
+	92% {opacity: 1;}
+	97% {opacity: 0;}
 	100% {opacity: 0;transform: scale(1.2);}
 }
 
@@ -113,28 +95,26 @@
 	background: unquote("url(" + asset-path("slide_2.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide2;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
-// /*３枚目*/
-// .slide3 {
-// 	background: unquote("url(" + asset-path("slide_3.jpg") + ")") no-repeat center center/cover;
-// 	animation-name: slide3;		/*上で設定しているキーフレーム（keyframes）の名前*/
-// }
-// /*４枚目*/
-// .slide4 {
-// 	background: unquote("url(" + asset-path("slide_4.jpg") + ")") no-repeat center center/cover;
-// 	animation-name: slide4;		/*上で設定しているキーフレーム（keyframes）の名前*/
-// }
-// /*５枚目*/
-// .slide5 {
-// 	background: unquote("url(" + asset-path("slide_5.jpg") + ")") no-repeat center center/cover;
-// 	animation-name: slide5;		/*上で設定しているキーフレーム（keyframes）の名前*/
-// }
-// /*６枚目*/
-// .slide6 {
-// 	background: unquote("url(" + asset-path("slide_6.jpg") + ")") no-repeat center center/cover;
-// 	animation-name: slide6;		/*上で設定しているキーフレーム（keyframes）の名前*/
-// }
-
-
+/*３枚目*/
+.slide3 {
+	background: unquote("url(" + asset-path("slide_3.jpg") + ")") no-repeat center center/cover;
+	animation-name: slide3;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*４枚目*/
+.slide4 {
+	background: unquote("url(" + asset-path("slide_4.jpg") + ")") no-repeat center center/cover;
+	animation-name: slide4;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*５枚目*/
+.slide5 {
+	background: unquote("url(" + asset-path("slide_5.jpg") + ")") no-repeat center center/cover;
+	animation-name: slide5;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*６枚目*/
+.slide6 {
+	background: unquote("url(" + asset-path("slide_6.jpg") + ")") no-repeat center center/cover;
+	animation-name: slide6;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
 
 /*画面の高さが500px以下の場合の設定。
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
