@@ -22,7 +22,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="works">
+	<body class="saxophone">
 
 		<div id="container">
 
@@ -34,35 +34,75 @@
 						<h1 class="title-logo"><%= link_to image_tag("logo_ryoya_smile_circle.png", alt: "Ryo-ya Smile"), root_path %></h1>
 						<h2 class="title">Activitys<span>活動内容</span></h2>
 
-						<h2>サックス</h2>
+						<section>
+							<h2>サックス</h2>
 
-						<figure class="c mb30">
-							<%= image_tag("sample1_big.jpg", alt: "写真の説明を入れます") %>
-						</figure>
+							<figure class="c mb30">
+								<%= image_tag("sax_2.jpg", alt: "サックス", class: "figure-image") %>
+							</figure>
 
-						<table class="ta1">
-							<caption>見出しが必要であればここを使います</caption>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-						</table>
+							<h3>
+								中学高校時代吹奏楽部に所属し、アルトサックスを担当しておりました。<br>
+								主にポップスやクラシックを吹いてます。<br>
+								演奏動画をSNSに投稿することもあります。
+							</h3>
+							<%= video_tag("sax_m1.mp4", controls: false, autoplay: true, loop: true, preload: "auto", muted: true) %>
+						</section>
+
+						<section>
+							<h2>経歴</h2>
+							<table class="ta1">
+								<caption>所属経歴</caption>
+								<tr>
+									<th>日本航空高校吹奏楽団</th>
+									<td>
+										2007年4月～2013年3月（中学生から所属）<br>
+										【役職】
+										<ul class="disc">
+											<li>2009年4月～2010年3月：中学部部長</li>
+											<li>2011年4月～2013年3月：サックスパートリーダー</li>
+											<li>2011年5月～2013年3月：ドラムメジャー</li>
+											<li>2012年4月～2013年3月：第51期部長</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>日本大学吹奏楽研究会</th>
+									<td>2014年4月～2014年9月</td>
+								</tr>
+							</table>
+							<p>
+								※リンク
+								<ul class="disc">
+									<li>日本航空高校吹奏楽団：<a href="https://lit.link/soratobuband">https://lit.link/soratobuband</a></li>
+									<li>日本大学吹奏楽研究会：<a href="http://www.nu-brass.com/">http://www.nu-brass.com/</a></li>
+								</ul>
+							</p>
+						</section>
+
+						<section>
+							<h2>ギャラリー</h2>
+							<div class="sax-image">
+								<%= link_to asset_path("sax_3.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("sax_3.jpg", alt: "サックス", class: "activitys-contents-image sax") %>
+								<% end %>
+								<%= link_to asset_path("sax_4.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("sax_4.jpg", alt: "サックス", class: "activitys-contents-image sax") %>
+								<% end %>
+								<%= link_to asset_path("sax_5.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("sax_5.jpg", alt: "サックス", class: "activitys-contents-image sax") %>
+								<% end %>
+								<%= link_to asset_path("sax_6.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("sax_6.jpg", alt: "サックス", class: "activitys-contents-image sax") %>
+								<% end %>
+								<%= link_to asset_path("sax_7.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("sax_7.jpg", alt: "サックス", class: "activitys-contents-image sax") %>
+								<% end %>
+								<%= link_to asset_path("sax_8.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("sax_8.jpg", alt: "サックス", class: "activitys-contents-image sax") %>
+								<% end %>
+							</div>
+						</section>
 
 					</article>
 

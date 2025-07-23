@@ -1,55 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ryo-ya Smile</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+	<head>
+		<title>Ryo-ya Smile</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<%= csrf_meta_tags %>
+		<%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-	<%= javascript_include_tag "openclose", "data-turbo-track": "reload" %>
-	<%= favicon_link_tag('favicon.ico') %>
-  </head>
+		<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+		<%= javascript_importmap_tags %>
+		<%= javascript_include_tag "openclose", "data-turbo-track": "reload" %>
+		<%= favicon_link_tag('favicon.ico') %>
+		
+		<!-- LightboxのCSS（見た目） -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+			
+	</head>
 
-  <body>
-    <!--PC用（801px以上端末）で表示させるブロック-->
-			<header class="pc">
+	<body>
+		<!--PC用（801px以上端末）で表示させるブロック-->
+				<header class="pc">
 
-				<h1 class="logo"><%= link_to image_tag("logo_ryoya_smile_circle.png", alt: "SAMPLE SITE"), root_path %></h1>
+					<h1 class="logo"><%= link_to image_tag("logo_ryoya_smile_circle.png", alt: "SAMPLE SITE"), root_path %></h1>
 
-				<!--PC用（801px以上端末）メニュー-->
-				<nav id="menubar">
-					<ul>
-						<li class="menuimg menu1"><a href="/"><span>Home</span></a></li>
-						<li class="menuimg menu2"><a href="/profile"><span>Profile</span></a></li>
-						<li class="menuimg menu3"><a href="/activitys"><span>Activitys</span></a></li>
-						<li class="menuimg menu4"><a href="/link"><span>Links</span></a></li>
-						<li class="menuimg menu5"><a href="/contact"><span>Contact</span></a></li>
-					</ul>
-				</nav>
-				<ul class="icon">
-					<li><%= link_to image_tag("icon_x.png", alt: "X"), "https://x.com/sax_rc_md", target: "_blank" %></li>
-					<li><%= link_to image_tag("icon_instagram.png", alt: "Instagram"), "https://www.instagram.com/ryoya_magician0125/", target: "_blank" %></li>
-					<li><%= link_to image_tag("icon_facebook.png", alt: "Facebook"), "https://www.facebook.com/ryoya.suzuki.313", target: "_blank" %></li>
-					<li><%= link_to image_tag("icon_note.png", alt: "note"), "https://note.com/ryoya_suzuki", target: "_blank" %></li>
-				</ul>
-
-			</header>
-			<!--/.pc-->
-
-			<!--小さな端末用（800px以下端末）で表示させるブロック-->
-			<header class="sh">
-
-				<!--小さな端末用（800px以下端末）メニュー-->
-				<div id="menubar-s">
-					<nav>
+					<!--PC用（801px以上端末）メニュー-->
+					<nav id="menubar">
 						<ul>
-							<li class="menuimg menu1"><a href="/"><span>Home</span></a></li>
-							<li class="menuimg menu2"><a href="/profile"><span>Profile</span></a></li>
-							<li class="menuimg menu3"><a href="/activitys"><span>Activitys</span></a></li>
-							<li class="menuimg menu4"><a href="/link"><span>Links</span></a></li>
-							<li class="menuimg menu5"><a href="/contact"><span>Contact</span></a></li>
+							<li class="menuimg menu1"><a href="/" data-turbo="false"><span>Home</span></a></li>
+							<li class="menuimg menu2"><a href="/profile" data-turbo="false"><span>Profile</span></a></li>
+							<li class="menuimg menu3"><a href="/activitys" data-turbo="false"><span>Activitys</span></a></li>
+							<li class="menuimg menu4"><a href="/link" data-turbo="false"><span>Links</span></a></li>
+							<li class="menuimg menu5"><a href="/contact" data-turbo="false"><span>Contact</span></a></li>
 						</ul>
 					</nav>
 					<ul class="icon">
@@ -58,22 +38,73 @@
 						<li><%= link_to image_tag("icon_facebook.png", alt: "Facebook"), "https://www.facebook.com/ryoya.suzuki.313", target: "_blank" %></li>
 						<li><%= link_to image_tag("icon_note.png", alt: "note"), "https://note.com/ryoya_suzuki", target: "_blank" %></li>
 					</ul>
-					<!--/#menubar-s-->
-				</div>
 
-			</header>
-			<!--/.sh-->
-			
-    <%= yield %>
+				</header>
+				<!--/.pc-->
 
-	<!--メニュー開閉ボタン-->
-	<div id="menubar_hdr" class="close"></div>
+				<!--小さな端末用（800px以下端末）で表示させるブロック-->
+				<header class="sh">
 
-	<!--メニューの開閉処理条件設定 800px以下-->
-	<script>
-		if (OCwindowWidth() <= 800) {
-			open_close("menubar_hdr", "menubar-s");
-		}
-	</script>
-  </body>
+					<!--小さな端末用（800px以下端末）メニュー-->
+					<div id="menubar-s">
+						<nav>
+							<ul>
+								<li class="menuimg menu1"><a href="/" data-turbo="false"><span>Home</span></a></li>
+								<li class="menuimg menu2"><a href="/profile" data-turbo="false"><span>Profile</span></a></li>
+								<li class="menuimg menu3"><a href="/activitys" data-turbo="false"><span>Activitys</span></a></li>
+								<li class="menuimg menu4"><a href="/link" data-turbo="false"><span>Links</span></a></li>
+								<li class="menuimg menu5"><a href="/contact" data-turbo="false"><span>Contact</span></a></li>
+							</ul>
+						</nav>
+						<ul class="icon">
+							<li><%= link_to image_tag("icon_x.png", alt: "X"), "https://x.com/sax_rc_md", target: "_blank" %></li>
+							<li><%= link_to image_tag("icon_instagram.png", alt: "Instagram"), "https://www.instagram.com/ryoya_magician0125/", target: "_blank" %></li>
+							<li><%= link_to image_tag("icon_facebook.png", alt: "Facebook"), "https://www.facebook.com/ryoya.suzuki.313", target: "_blank" %></li>
+							<li><%= link_to image_tag("icon_note.png", alt: "note"), "https://note.com/ryoya_suzuki", target: "_blank" %></li>
+						</ul>
+						<!--/#menubar-s-->
+					</div>
+
+				</header>
+				<!--/.sh-->
+				
+		<%= yield %>
+
+		<!-- jQuery（Lightbox2が依存してる） -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- LightboxのJS（動作） -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+		<!--メニュー開閉ボタン-->
+		<div id="menubar_hdr" class="close"></div>
+
+		<!--メニューの開閉処理条件設定 800px以下-->
+		<script>
+			if (OCwindowWidth() <= 800) {
+				open_close("menubar_hdr", "menubar-s");
+			}
+		</script>
+		<script>
+			document.addEventListener("turbo:before-cache", function () {
+				const lightboxOverlay = document.querySelector('#lightboxOverlay');
+				const lightbox = document.querySelector('#lightbox');
+
+				if (lightboxOverlay) {
+				lightboxOverlay.style.display = 'none';
+				}
+				if (lightbox) {
+				lightbox.style.display = 'none';
+				}
+			});
+
+			document.addEventListener("turbo:load", function () {
+				if (window.lightbox) {
+				lightbox.option({
+					'resizeDuration': 200,
+					'wrapAround': true
+				});
+				}
+			});
+		</script>
+	</body>
 </html>

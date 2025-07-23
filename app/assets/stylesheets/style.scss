@@ -49,18 +49,34 @@ a:hover {
 }
 /*profile.htmlの背景画像指定*/
 .prifile #container {
-	background: unquote("url(" + asset-path("1.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: unquote("url(" + asset-path("1.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
+	background: unquote("url(" + asset-path("profile_back.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: unquote("url(" + asset-path("profile_back.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
 }
 /*works.htmlの背景画像指定*/
 .works #container {
 	background: unquote("url(" + asset-path("2.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
 	background: unquote("url(" + asset-path("2.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
 }
+.activitys #container {
+	background: unquote("url(" + asset-path("activitys_back.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: unquote("url(" + asset-path("activitys_back.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
+}
+.engineer #container {
+	background: unquote("url(" + asset-path("system_engineer_back.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: unquote("url(" + asset-path("system_engineer_back.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
+}
+.magician #container {
+	background: unquote("url(" + asset-path("magician_back.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: unquote("url(" + asset-path("magician_back.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
+}
+.saxophone #container {
+	background: unquote("url(" + asset-path("sax_back.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: unquote("url(" + asset-path("sax_back.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
+}
 /*link.htmlの背景画像指定*/
 .link #container {
-	background: unquote("url(" + asset-path("3.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: unquote("url(" + asset-path("3.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
+	background: unquote("url(" + asset-path("link_back.jpg") + ")") no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: unquote("url(" + asset-path("link_back.jpg") + ")") no-repeat center center / cover;	/*背景画像*/
 }
 /*contact.htmlにも背景画像を指定したい場合は、以下にスタイルを追加して下さい。*/
 .contact #container {
@@ -645,9 +661,9 @@ ol {
 	width: 40%;
 	box-sizing: border-box;
 }
-.table-hopping-image {
-	display: flex;
-}
+// .table-hopping-image {
+// 	display: flex;
+// }
 .activitys-contents-image {
 	width: 30%;
 }

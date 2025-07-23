@@ -22,7 +22,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="works">
+	<body class="magician">
 
 		<div id="container">
 
@@ -48,7 +48,9 @@
 								その他、出張マジックも関東近郊で承っております。<br>
 								記念日、宴会、パーティー等、ご依頼お待ちしております。
 							</h3>
-							<%= image_tag("magician_3.jpg", alt: "マジシャン", class: "activitys-contents-image") %>
+							<%= link_to asset_path("magician_3.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+								<%= image_tag("magician_3.jpg", alt: "マジシャン", class: "activitys-contents-image") %>
+							<% end %>
 						</section>
 
 						<section>
@@ -111,8 +113,12 @@
 							</div>
 							<div class="clear"></div>
 							<div class="table-hopping-image">
-								<%= image_tag("magician_4.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
-								<%= image_tag("magician_5.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<%= link_to asset_path("magician_4.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("magician_4.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<% end %>
+								<%= link_to asset_path("magician_5.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("magician_5.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<% end %>
 							</div>
 						</section>
 
@@ -129,9 +135,15 @@
 								</ul>
 							</h3>
 							<div class="table-hopping-image">
-								<%= image_tag("magician_6.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
-								<%= image_tag("magician_7.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
-								<%= image_tag("magician_8.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<%= link_to asset_path("magician_6.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("magician_6.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<% end %>
+								<%= link_to asset_path("magician_7.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("magician_7.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<% end %>
+								<%= link_to asset_path("magician_8.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("magician_8.jpg", alt: "マジシャン", class: "activitys-contents-image table-hopping") %>
+								<% end %>
 							</div>
 						</section>
 					</article>
