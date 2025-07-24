@@ -22,7 +22,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="works">
+	<body class="akiba">
 
 		<div id="container">
 
@@ -34,11 +34,19 @@
 						<h1 class="title-logo"><%= link_to image_tag("logo_ryoya_smile_circle.png", alt: "Ryo-ya Smile"), root_path %></h1>
 						<h2 class="title">Activitys<span>活動内容</span></h2>
 
-						<h2>秋葉原</h2>
+						<section>
+							<h2>秋葉原</h2>
 
-						<figure class="c mb30">
-							<%= image_tag("sample1_big.jpg", alt: "写真の説明を入れます") %>
-						</figure>
+							<figure class="c mb30">
+								<%= image_tag("akiba/akiba_2.jpg", alt: "写真の説明を入れます") %>
+							</figure>
+							
+							<h3>
+								2008年5月に初めて秋葉原を訪れました。<br>
+								オタク文化に触れることで非日常感溢れる環境が意外と近くにあったことに感激し、「自分の居場所はココだ！」と感じました。<br>
+								それから<%= get_age(Date.new(2008, 5, 5)) %>年間、休日はいつも秋葉原に通っております(笑)<br>
+							</h3>
+						</section>
 
 						<table class="ta1">
 							<caption>見出しが必要であればここを使います</caption>
@@ -63,6 +71,12 @@
 								<td>サンプルテキスト。</td>
 							</tr>
 						</table>
+
+						<section>
+							<h2>ギャラリー</h2>
+							<div class="akiba-image">
+							</div>
+						</section>
 
 					</article>
 

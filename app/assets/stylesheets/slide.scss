@@ -87,32 +87,32 @@
 }
 /*１枚目*/
 .slide1 {
-	background: unquote("url(" + asset-path("slide_1.jpg") + ")") no-repeat center center/cover;
+	background: unquote("url(" + asset-path("slide/slide_1.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide1;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*２枚目*/
 .slide2 {
-	background: unquote("url(" + asset-path("slide_2.jpg") + ")") no-repeat center center/cover;
+	background: unquote("url(" + asset-path("slide/slide_2.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide2;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*３枚目*/
 .slide3 {
-	background: unquote("url(" + asset-path("slide_3.jpg") + ")") no-repeat center center/cover;
+	background: unquote("url(" + asset-path("slide/slide_3.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide3;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*４枚目*/
 .slide4 {
-	background: unquote("url(" + asset-path("slide_4.jpg") + ")") no-repeat center center/cover;
+	background: unquote("url(" + asset-path("slide/slide_4.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide4;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*５枚目*/
 .slide5 {
-	background: unquote("url(" + asset-path("slide_5.jpg") + ")") no-repeat center center/cover;
+	background: unquote("url(" + asset-path("slide/slide_5.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide5;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*６枚目*/
 .slide6 {
-	background: unquote("url(" + asset-path("slide_6.jpg") + ")") no-repeat center center/cover;
+	background: unquote("url(" + asset-path("slide/slide_6.jpg") + ")") no-repeat center center/cover;
 	animation-name: slide6;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 

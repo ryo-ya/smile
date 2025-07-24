@@ -58,15 +58,15 @@
 							<table class="ta1">
 								<tr>
 									<th>お名前※</th>
-									<td><input type="text" name="name" value="<%= params[:name] %>" size="30" class="ws"></td>
+									<td><input type="text" name="name" value="<%= params[:name] %>" placeholder="名前を入力してください。" size="30" class="ws"></td>
 								</tr>
 								<tr>
 									<th>メールアドレス※</th>
-									<td><input type="text" name="email" value="<%= params[:email] %>" size="30" class="ws"></td>
+									<td><input type="text" name="email" value="<%= params[:email] %>" placeholder="メールアドレスを入力してください。" size="30" class="ws"></td>
 								</tr>
 								<tr>
 									<th>お問い合わせ詳細※</th>
-									<td><textarea name="content" cols="30" rows="10" class="wl"><%= params[:content] %></textarea></td>
+									<td><textarea name="content" placeholder="お問い合わせ内容を入力してください。" cols="30" rows="10" class="wl"><%= params[:content] %></textarea></td>
 								</tr>
 							</table>
 
