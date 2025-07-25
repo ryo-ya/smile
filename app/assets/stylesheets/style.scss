@@ -596,6 +596,10 @@ ol {
 	display: none;
 }
 
+.line-break-none {
+	display: block;
+}
+
 /*タイトルロゴ
 ---------------------------------------------------------------------------*/
 .title-logo {
@@ -625,6 +629,18 @@ ol {
 .activitys-contents-image {
 	width: 80%;
 	padding-bottom: 50px;
+}
+.gallery-photo-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	// justify-content: center;
+}
+.gallery-photo figcaption {
+	text-align: center;
+	margin-top: 0.5em;
+	font-size: 0.9em;
+	color: #bbb;
 }
 .table-hopping {
 	padding-right: 20px;
@@ -656,6 +672,10 @@ ol {
 
 .line-break {
 	display: block;
+}
+
+.line-break-none {
+	display: none;
 }
 /*マジシャン出演場所
 ---------------------------------------------------------------------------*/

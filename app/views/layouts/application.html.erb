@@ -25,11 +25,11 @@
 					<!--PC用（801px以上端末）メニュー-->
 					<nav id="menubar">
 						<ul>
-							<li class="menuimg menu1"><a href="/" data-turbo="false"><span>Home</span></a></li>
-							<li class="menuimg menu2"><a href="/profile" data-turbo="false"><span>Profile</span></a></li>
-							<li class="menuimg menu3"><a href="/activitys" data-turbo="false"><span>Activitys</span></a></li>
-							<li class="menuimg menu4"><a href="/link" data-turbo="false"><span>Links</span></a></li>
-							<li class="menuimg menu5"><a href="/contact" data-turbo="false"><span>Contact</span></a></li>
+							<li class="menuimg menu1 <%= 'current' if current_page?(root_path) %>"><a href="/" data-turbo="false"><span>Home</span></a></li>
+							<li class="menuimg menu2 <%= 'current' if current_page?(profile_path) %>"><a href="/profile" data-turbo="false"><span>Profile</span></a></li>
+							<li class="menuimg menu3 <%= 'current' if current_page?(activitys_path) %>"><a href="/activitys" data-turbo="false"><span>Activitys</span></a></li>
+							<li class="menuimg menu4 <%= 'current' if current_page?(link_path) %>"><a href="/link" data-turbo="false"><span>Links</span></a></li>
+							<li class="menuimg menu5 <%= 'current' if current_page?(contact_path) %>"><a href="/contact" data-turbo="false"><span>Contact</span></a></li>
 						</ul>
 					</nav>
 					<ul class="icon">
@@ -49,11 +49,11 @@
 					<div id="menubar-s">
 						<nav>
 							<ul>
-								<li class="menuimg menu1"><a href="/" data-turbo="false"><span>Home</span></a></li>
-								<li class="menuimg menu2"><a href="/profile" data-turbo="false"><span>Profile</span></a></li>
-								<li class="menuimg menu3"><a href="/activitys" data-turbo="false"><span>Activitys</span></a></li>
-								<li class="menuimg menu4"><a href="/link" data-turbo="false"><span>Links</span></a></li>
-								<li class="menuimg menu5"><a href="/contact" data-turbo="false"><span>Contact</span></a></li>
+								<li class="menuimg menu1 <%= 'current' if current_page?(root_path) %>"><a href="/" data-turbo="false"><span>Home</span></a></li>
+								<li class="menuimg menu2 <%= 'current' if current_page?(profile_path) %>"><a href="/profile" data-turbo="false"><span>Profile</span></a></li>
+								<li class="menuimg menu3 <%= 'current' if current_page?(activitys_path) %>"><a href="/activitys" data-turbo="false"><span>Activitys</span></a></li>
+								<li class="menuimg menu4 <%= 'current' if current_page?(link_path) %>"><a href="/link" data-turbo="false"><span>Links</span></a></li>
+								<li class="menuimg menu5 <%= 'current' if current_page?(contact_path) %>"><a href="/contact" data-turbo="false"><span>Contact</span></a></li>
 							</ul>
 						</nav>
 						<ul class="icon">

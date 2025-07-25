@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get "link" => "home#link"
   get "contact" => "contact#new"
   post "contact" => "contact#new"
-  post 'contact/confirm' => "contact#confirm"
+  post "contact/confirm" => "contact#confirm"
   post "contact/create" => "contact#create"
   get "contact/complete" => "contact#complete"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

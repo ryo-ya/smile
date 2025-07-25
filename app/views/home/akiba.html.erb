@@ -46,35 +46,129 @@
 								オタク文化に触れることで非日常感溢れる環境が意外と近くにあったことに感激し、「自分の居場所はココだ！」と感じました。<br>
 								それから<%= get_age(Date.new(2008, 5, 5)) %>年間、休日はいつも秋葉原に通っております(笑)<br>
 							</h3>
+							<%= link_to asset_path("akiba/akiba_3.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+								<%= image_tag("akiba/akiba_3.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+							<% end %>
 						</section>
 
-						<table class="ta1">
-							<caption>見出しが必要であればここを使います</caption>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-							<tr>
-								<th>サンプル見出し</th>
-								<td>サンプルテキスト。</td>
-							</tr>
-						</table>
+						<section>
+							<h2>秋葉原電気街</h2>
+							<h3>
+								秋葉原と言えば、電化製品店や家電量販店が集う街。<br>
+								システムエンジニアである僕も、パソコンやその周辺機器で困ったことがあればまず秋葉原へと足を運びます。<br>
+								秋葉原にはそれらを専門的に取り扱う店舗も多数存在し、また安く購入できる場合もあるためおすすめです。
+							</h3>
+							<div class="gallery-photo-wrapper">
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_4.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_4.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>秋葉原電気街　中央通り</figcaption>
+								</figure>
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_5.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_5.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>ドスパラ　秋葉原本店</figcaption>
+								</figure>
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_6.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_6.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>パソコン工房　秋葉原本店</figcaption>
+								</figure>
+							</div>
+						</section>
+
+						<section>
+							<h2>オタクの聖地</h2>
+							<h3>
+								数々のアニメグッズやコスプレ衣装が揃う店舗が多く存在します。<br>
+								僕はコスプレはしませんが、知り合いのコスプレイヤーにも秋葉原を頻繁に訪れる方がおります。<br>
+								中学時代はアニソンが好きだったので、よくCDを購入しておりました。<br>
+								アニメはあまり見ません(笑)<br>
+								それでも僕が見たアニメの数少ない中で、おすすめは「CLANNAD」です。
+							</h3>
+							<div class="gallery-photo-wrapper">
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_7.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_7.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>秋葉原駅前</figcaption>
+								</figure>
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_8.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_8.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>アニメイト秋葉原</figcaption>
+								</figure>
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_9.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_9.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>多くのアニメグッズが揃う</figcaption>
+								</figure>
+							</div>
+						</section>
+
+						<section>
+							<h2>メイドカフェ</h2>
+							<h3>
+								秋葉原の伝統的な文化の1つ、メイドカフェ。<br>
+								定番の「オムライスにケチャップでお絵描き」の他に、メイドさんと記念撮影ができたりメイドさんのライブパフォーマンスを楽しむことができます。<br>
+								誕生日や記念日はメイドさんからお祝いをしてもらったり、逆にメイドさんのお祝いをしたり……<br>
+								楽しみ方は皆様次第です。<br>
+								せっかく秋葉原に来たのなら、「萌え」を感じてみましょう(笑)<br><br>
+								【個人的におすすめのメイドカフェ】
+								<ul class="disc">
+									<li>めいどりーみん<br class="line-break-none">（<a href="https://maidreamin.com/">https://maidreamin.com/</a>）</li>
+									<li>MAID√MADE<br class="line-break-none">（<a href="https://made-maid.com/">https://made-maid.com/</a>）</li>
+									<li>アキバ絶対領域<br class="line-break-none">（<a href="https://akibazettai.com/">https://akibazettai.com/</a>）</li>
+								</ul>
+							</h3>
+							<div class="gallery-photo-wrapper">
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_10.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_10.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>めいどりーみん</figcaption>
+								</figure>
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_11.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_11.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>MAID√MADE</figcaption>
+								</figure>
+								<figure class="gallery-photo activitys-contents-image">
+									<%= link_to asset_path("akiba/akiba_12.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+										<%= image_tag("akiba/akiba_12.jpg", alt: "秋葉原", class: "akiba") %>
+									<% end %>
+									<figcaption>アキバ絶対領域</figcaption>
+								</figure>
+							</div>
+						</section>
 
 						<section>
 							<h2>ギャラリー</h2>
 							<div class="akiba-image">
+								<%= link_to asset_path("akiba/akiba_13.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("akiba/akiba_13.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+								<% end %>
+								<%= link_to asset_path("akiba/akiba_14.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("akiba/akiba_14.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+								<% end %>
+								<%= link_to asset_path("akiba/akiba_15.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("akiba/akiba_15.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+								<% end %>
+								<%= link_to asset_path("akiba/akiba_16.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("akiba/akiba_16.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+								<% end %>
+								<%= link_to asset_path("akiba/akiba_17.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("akiba/akiba_17.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+								<% end %>
+								<%= link_to asset_path("akiba/akiba_18.jpg"), data: {lightbox: "gallery", turbo: false} do %>
+									<%= image_tag("akiba/akiba_18.jpg", alt: "秋葉原", class: "activitys-contents-image akiba") %>
+								<% end %>
 							</div>
 						</section>
 
